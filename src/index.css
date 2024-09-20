@@ -7,3 +7,31 @@ body,
 	width: 100vw;
 	overflow: hidden;
 }
+
+canvas{
+    touch-action: none;
+}
+
+.htmlScreen iframe{
+    width: 1024px;
+    height: 670px;
+    border: none;
+    overflow: scroll;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.htmlScreen iframe ::-webkit-scrollbar{
+    display: none;
+}
+
+
+iframe::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+/* Hide scrollbar for IE, Edge */
+iframe {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
